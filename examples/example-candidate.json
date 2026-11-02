@@ -1,0 +1,53 @@
+{
+  "candidate_id": "pp-20261102-141500-glitchpigeon",
+  "discovered_at": "2026-11-02T14:15:00Z",
+  "status": "prepared",
+  "narrative": {
+    "title": "Glitch Pigeon format",
+    "summary": "A new joke format where ordinary street pigeons are captioned as corrupted NPCs dropping side-quest dialogue. Multiple unrelated accounts posted original variants within three hours.",
+    "source_posts": [
+      "https://x.com/example_user/status/0000000000000000001",
+      "https://x.com/other_user/status/0000000000000000002"
+    ],
+    "freshness_score": 88,
+    "engagement_score": 72,
+    "meme_score": 91,
+    "originality_score": 84,
+    "cultural_relevance_score": 70,
+    "overall_score": 82.95,
+    "confidence": "medium",
+    "score_explanations": {
+      "freshness": "First variants appeared within the last three hours; still forming.",
+      "organic_engagement": "Replies add new dialogue lines rather than single-emoji spam; exact metrics partially unavailable.",
+      "meme_potential": "Easy to remix: pigeon + glitch caption template.",
+      "originality": "Not a celebrity-name or standard animal-coin clone.",
+      "cultural_relevance": "Riffs on NPC/side-quest internet slang already broadly understood."
+    },
+    "why_interesting": "The format is compressible into a character + catchphrase without needing a real-world celebrity.",
+    "overused": false,
+    "artificial_engagement_suspected": false
+  },
+  "token": {
+    "name": "Glitch Pigeon",
+    "ticker": "GLITCHP",
+    "description": "Street NPC energy. Corrupted pigeon dropping side quests. Community meme token — not financial advice, not affiliated with any poster.",
+    "image_path": "artwork.png",
+    "social_links": []
+  },
+  "checks": {
+    "historical_duplicate": false,
+    "pumpfun_duplicate_status": "unverified",
+    "impersonation_risk": false,
+    "source_urls_verified": true,
+    "duplicate_of": null
+  },
+  "launch": {
+    "form_prepared": false,
+    "user_approved": false,
+    "approval_text": null,
+    "published": false,
+    "token_url": null,
+    "mint_address": null,
+    "screenshot_path": null
+  }
+}

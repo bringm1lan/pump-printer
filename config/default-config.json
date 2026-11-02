@@ -1,0 +1,61 @@
+{
+  "skill": "pump-printer",
+  "version": "1.0.0",
+  "onboarding_complete": false,
+  "enabled": false,
+  "timezone": "auto",
+  "schedule": {
+    "frequency_minutes": 15,
+    "start_time": "08:00",
+    "end_time": "23:45",
+    "active_weekdays": [1, 2, 3, 4, 5, 6, 7],
+    "user_confirmed": false,
+    "routine_name": "Pump Printer Research"
+  },
+  "research": {
+    "strategy": "hybrid_hunter",
+    "topics": [
+      "internet memes",
+      "AI culture",
+      "crypto-native humor",
+      "technology announcements",
+      "viral phrases",
+      "pop culture",
+      "gaming",
+      "unexpected internet trends"
+    ],
+    "sensitivity": "balanced",
+    "max_x_reads_per_run": 20,
+    "daily_research_budget": null,
+    "notify_on_empty_runs": false,
+    "min_score_to_prepare_kit": 70,
+    "min_score_high_priority": 85,
+    "min_score_watchlist": 50
+  },
+  "scoring_weights": {
+    "freshness": 0.25,
+    "organic_engagement": 0.2,
+    "meme_potential": 0.25,
+    "originality": 0.2,
+    "cultural_relevance": 0.1
+  },
+  "pumpfun": {
+    "mode": "launch_kits",
+    "create_url": "https://pump.fun/create",
+    "leave_social_links_blank": true,
+    "developer_buy": "zero_or_blank",
+    "auto_publish": false,
+    "require_explicit_candidate_approval": true
+  },
+  "safety": {
+    "never_request_secrets": true,
+    "never_fabricate_urls": true,
+    "never_bypass_approvals": true,
+    "never_auto_buy_tokens": true,
+    "block_impersonation_tokens": true
+  },
+  "storage": {
+    "root": "pump-printer",
+    "persistence_verified": false
+  }
+}

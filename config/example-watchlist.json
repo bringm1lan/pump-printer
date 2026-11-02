@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-11-02T00:00:00Z",
+  "accounts": [
+    {
+      "handle": "example_creator",
+      "notes": "Often early on internet culture jokes",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "handle": "another_account",
+      "notes": "Tech + meme crossover",
+      "priority": "medium",
+      "enabled": true
+    }
+  ],
+  "keywords": [
+    "new format",
+    "nobody talking about",
+    "this is the new",
+    "lore"
+  ],
+  "exclude_handles": [],
+  "notes": "Replace example handles with your own public accounts. No account is required by the skill."
+}

@@ -1,0 +1,50 @@
+{
+  "candidate_id": "pp-YYYYMMDD-HHMMSS-slug",
+  "discovered_at": "2026-11-02T12:00:00Z",
+  "status": "prepared",
+  "narrative": {
+    "title": "",
+    "summary": "",
+    "source_posts": [],
+    "freshness_score": 0,
+    "engagement_score": 0,
+    "meme_score": 0,
+    "originality_score": 0,
+    "cultural_relevance_score": 0,
+    "overall_score": 0,
+    "confidence": "low",
+    "score_explanations": {
+      "freshness": "",
+      "organic_engagement": "",
+      "meme_potential": "",
+      "originality": "",
+      "cultural_relevance": ""
+    },
+    "why_interesting": "",
+    "overused": false,
+    "artificial_engagement_suspected": false
+  },
+  "token": {
+    "name": "",
+    "ticker": "",
+    "description": "",
+    "image_path": null,
+    "social_links": []
+  },
+  "checks": {
+    "historical_duplicate": false,
+    "pumpfun_duplicate_status": "unverified",
+    "impersonation_risk": false,
+    "source_urls_verified": false,
+    "duplicate_of": null
+  },
+  "launch": {
+    "form_prepared": false,
+    "user_approved": false,
+    "approval_text": null,
+    "published": false,
+    "token_url": null,
+    "mint_address": null,
+    "screenshot_path": null
+  }
+}

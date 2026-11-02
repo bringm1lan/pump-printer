@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pump-printer.local/schemas/candidate.json",
+  "title": "PumpPrinterCandidate",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "candidate_id",
+    "discovered_at",
+    "status",
+    "narrative",
+    "token",
+    "checks",
+    "launch"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Unique id, e.g. pp-YYYYMMDD-HHMMSS-slug"
+    },
+    "discovered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "researched",
+        "watchlist",
+        "prepared",
+        "incomplete",
+        "rejected",
+        "approved",
+        "form_prepared",
+        "published",
+        "publish_unverified"
+      ]
+    },
+    "narrative": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "title",
+        "summary",
+        "source_posts",
+        "freshness_score",
+        "engagement_score",
+        "meme_score",
+        "originality_score",
+        "cultural_relevance_score",
+        "overall_score",
+        "confidence"
+      ],
+      "properties": {
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "source_posts": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        },
+        "freshness_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "engagement_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "meme_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "originality_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "cultural_relevance_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "overall_score": { "type": "number", "minimum": 0, "maximum": 100 },
+        "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+        "score_explanations": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+        "why_interesting": { "type": "string" },
+        "overused": { "type": "boolean" },
+        "artificial_engagement_suspected": { "type": "boolean" }
+      }
+    },
+    "token": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["name", "ticker", "description", "image_path", "social_links"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "ticker": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 12,
+          "pattern": "^[A-Za-z0-9]+$"
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "image_path": { "type": ["string", "null"] },
+        "social_links": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "historical_duplicate",
+        "pumpfun_duplicate_status",
+        "impersonation_risk",
+        "source_urls_verified"
+      ],
+      "properties": {
+        "historical_duplicate": { "type": "boolean" },
+        "pumpfun_duplicate_status": {
+          "type": "string",
+          "enum": ["clear", "collision", "unverified"]
+        },
+        "impersonation_risk": { "type": "boolean" },
+        "source_urls_verified": { "type": "boolean" },
+        "duplicate_of": { "type": ["string", "null"] }
+      }
+    },
+    "launch": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "form_prepared",
+        "user_approved",
+        "published",
+        "token_url",
+        "mint_address"
+      ],
+      "properties": {
+        "form_prepared": { "type": "boolean" },
+        "user_approved": { "type": "boolean" },
+        "approval_text": { "type": ["string", "null"] },
+        "published": { "type": "boolean" },
+        "token_url": { "type": ["string", "null"], "format": "uri" },
+        "mint_address": { "type": ["string", "null"] },
+        "screenshot_path": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

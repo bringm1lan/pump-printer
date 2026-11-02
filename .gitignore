@@ -1,0 +1,10 @@
+# Runtime data created by a live Bot (not part of the skill package)
+pump-printer/
+**/user-config.json
+**/capability-probe.json
+**/watchlist.json
+!config/example-watchlist.json
+!config/default-config.json
+*.png
+!docs/**/*.png
+.DS_Store

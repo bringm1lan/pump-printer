@@ -1,0 +1,40 @@
+{
+  "description": "Mock X-like posts for offline testing. Do not treat as live data.",
+  "fetched_at": "2026-11-02T14:00:00Z",
+  "posts": [
+    {
+      "id": "1001",
+      "url": "https://x.com/mock_a/status/1001",
+      "handle": "mock_a",
+      "text": "new format just dropped: caption any pigeon like a corrupted RPG NPC. \"ERROR: crumb quest failed\"",
+      "created_at": "2026-11-02T13:10:00Z",
+      "metrics_available": false
+    },
+    {
+      "id": "1002",
+      "url": "https://x.com/mock_b/status/1002",
+      "handle": "mock_b",
+      "text": "replying to the pigeon NPC thing with my own glitch lines — this is spreading weirdly fast",
+      "created_at": "2026-11-02T13:40:00Z",
+      "metrics_available": false
+    },
+    {
+      "id": "1003",
+      "url": "https://x.com/mock_c/status/1003",
+      "handle": "mock_c",
+      "text": "Just launched $DOGE2 on pump fun who wants in 100x guaranteed",
+      "created_at": "2026-11-02T13:55:00Z",
+      "metrics_available": false,
+      "notes": "Should be rejected: low originality + financial promise language in source"
+    },
+    {
+      "id": "1004",
+      "url": "https://x.com/mock_d/status/1004",
+      "handle": "mock_d",
+      "text": "official elon token out now link in bio",
+      "created_at": "2026-11-02T13:58:00Z",
+      "metrics_available": false,
+      "notes": "Should flag impersonation_risk if turned into a concept"
+    }
+  ]
+}
